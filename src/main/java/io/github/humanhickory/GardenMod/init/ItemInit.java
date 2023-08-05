@@ -26,6 +26,7 @@ public class ItemInit {
     public static final RegistryObject<Item> BLUEBERRY_SEEDS = registerFoodBlockItem("blueberry_seeds", BlockInit.BLUEBERRY_CROP);
     public static final RegistryObject<Item> TOMATO_SEEDS = registerFoodBlockItem("tomato_seeds", BlockInit.TOMATO_CROP);
     public static final RegistryObject<Item> CABBAGE = registerFoodBlockItem("cabbage", BlockInit.CABBAGE_CROP);
+    public static final RegistryObject<Item> BLACKBERRY = registerFoodBlockItem("blackberry", BlockInit.BLACKBERRY_BUSH);
 
     //PRIVATE METHODS
 

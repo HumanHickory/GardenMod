@@ -1,6 +1,7 @@
 package io.github.humanhickory.GardenMod.init;
 
 import io.github.humanhickory.GardenMod.GardenMod;
+import io.github.humanhickory.GardenMod.blocks.bushes.BlackberryBushBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.BlueberryCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.CabbageCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.TomatoCropBlock;
@@ -8,7 +9,11 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
@@ -27,12 +32,10 @@ public class BlockInit {
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
             ()-> new CabbageCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
-    }
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
-        return CreativeTabInit.addToTab(ItemInit.ITEMS.register(name, () -> new ItemNameBlockItem(block.get(), new Item.Properties())));
-    }
+    public static final RegistryObject<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush",
+            ()-> new BlackberryBushBlock(BlockBehaviour.Properties.of()
+                    .mapColor(MapColor.PLANT).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY)));
+
+
+
 }
