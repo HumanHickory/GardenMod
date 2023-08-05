@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gardenmod:blueberry_seeds",
+          "name": "gardenmod:cabbage",
           "weight": 10,
           "functions": [
             {
@@ -18,6 +18,15 @@
             }
           ]
         }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "gardenmod:cabbage_crop",
+          "properties": {
+            "age": "0"
+          }
+        }
       ]
     },
     {
@@ -25,8 +34,8 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "gardenmod:blueberry",
-          "weight": 10,
+          "name": "gardenmod:cabbage",
+          "weight": 5,
           "functions": [
             {
               "function": "minecraft:set_count",
@@ -41,9 +50,9 @@
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "gardenmod:blueberry_crop",
+          "block": "gardenmod:cabbage_crop",
           "properties": {
-            "age": "6"
+            "age": "3"
           }
         }
       ]

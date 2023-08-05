@@ -1,7 +1,7 @@
 {
-  "parent": "minecraft:block/crop",
+  "parent": "minecraft:block/tinted_cross",
   "textures": {
-    "crop": "gardenmod:block/tomato_crop4"
+    "cross": "gardenmod:block/tomato_crop4"
   },
   "render_type": "cutout"
 }

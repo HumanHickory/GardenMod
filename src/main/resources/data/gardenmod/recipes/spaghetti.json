@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    " E ",
+    " X "
+  ],
+  "key": {
+    "X": {
+      "item": "gardenmod:copper_pot"
+    },
+    "#": {
+      "item": "gardenmod:tomato"
+    },
+    "E": {
+      "item": "minecraft:wheat"
+    }
+  },
+  "result": {
+    "item": "gardenmod:spaghetti"
+  }
+}
+
+
+

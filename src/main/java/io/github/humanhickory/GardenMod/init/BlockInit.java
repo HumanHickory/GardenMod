@@ -2,6 +2,7 @@ package io.github.humanhickory.GardenMod.init;
 
 import io.github.humanhickory.GardenMod.GardenMod;
 import io.github.humanhickory.GardenMod.blocks.crops.BlueberryCropBlock;
+import io.github.humanhickory.GardenMod.blocks.crops.CabbageCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.TomatoCropBlock;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -23,6 +24,8 @@ public class BlockInit {
     public static final RegistryObject<Block> TOMATO_CROP = BLOCKS.register("tomato_crop",
             ()-> new TomatoCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
+    public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
+            ()-> new CabbageCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

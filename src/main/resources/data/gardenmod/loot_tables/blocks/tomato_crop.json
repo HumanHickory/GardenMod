@@ -2,28 +2,38 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
+      "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "gardenmod:tomato_seeds",
+          "weight": 10,
+          "functions": [
             {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:block_state_property",
-                  "block": "gardenmod:tomato_crop",
-                  "properties": {
-                    "age": "5"
-                  }
-                }
-              ],
-              "name": "gardenmod:tomato"
-            },
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 1
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "gardenmod:tomato",
+          "weight": 10,
+          "functions": [
             {
-              "type": "minecraft:item",
-              "name": "gardenmod:tomato_seeds"
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 2,
+                "max": 3
+              }
             }
           ]
         }
@@ -37,41 +47,6 @@
           }
         }
       ]
-    },
-    {
-      "rolls": 1.0,
-      "bonus_rolls": 0.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "gardenmod:tomato_seeds"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "gardenmod:tomato_crop",
-          "properties": {
-            "age": "5"
-          }
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:apply_bonus",
-          "enchantment": "minecraft:fortune",
-          "formula": "minecraft:binomial_with_bonus_count",
-          "parameters": {
-            "extra": 3,
-            "probability": 0.5714286
-          }
-        }
-      ]
-    }
-  ],
-  "functions": [
-    {
-      "function": "minecraft:explosion_decay"
     }
   ]
 }

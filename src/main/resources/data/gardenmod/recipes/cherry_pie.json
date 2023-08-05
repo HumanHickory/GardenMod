@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "gardenmod:cherry"
+    },
+    {
+      "item": "gardenmod:cherry"
+    },
+    {
+      "item": "gardenmod:cherry"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+  ],
+  "result": {
+    "item": "gardenmod:cherry_pie"
+  }
+}
