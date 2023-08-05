@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "gardenmod:block/ice_cream_maker"
+  }
+}

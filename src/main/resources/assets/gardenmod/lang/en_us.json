@@ -1,0 +1,15 @@
+{
+  "item.gardenmod.blueberry": "Blueberry",
+  "item.gardenmod.blueberry_seeds": "Blueberry Seeds",
+  "item.gardenmod.tomato_seeds": "Tomato Seeds",
+  "item.gardenmod.tomato": "Tomato",
+  "item.gardenmod.cherry": "Cherry",
+  "item.gardenmod.ice_cream_maker": "Ice Cream Maker",
+
+  "block.gardenmod.blueberry_crop": "Blueberry Crop",
+  "block.gardenmod.tomato_crop": "Tomato Crop",
+  "block.gardenmod.ice_cream_maker": "Ice Cream Maker",
+
+  "itemGroup.garden_mod_tab": "Garden Mod Tab",
+  "itemGroup.ice_cream_maker": "Ice Cream Maker"
+}
