@@ -1,0 +1,9 @@
+{
+  "sources": [
+    {
+      "type": "directory",
+      "source": "entity/ice_chest",
+      "prefix": "entity/ice_chest/"
+    }
+  ]
+}

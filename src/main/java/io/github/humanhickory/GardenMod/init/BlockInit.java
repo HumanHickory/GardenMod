@@ -1,24 +1,19 @@
 package io.github.humanhickory.GardenMod.init;
 
 import io.github.humanhickory.GardenMod.GardenMod;
+import io.github.humanhickory.GardenMod.blockEntities.iceChest.IceChestBlock;
+import io.github.humanhickory.GardenMod.blockEntities.iceChest.IceChestBlockEntity;
 import io.github.humanhickory.GardenMod.blocks.bushes.BlackberryBushBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.BlueberryCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.CabbageCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.TomatoCropBlock;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.SoundType;
-import net.minecraft.world.level.block.SweetBerryBushBlock;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-
-import java.util.function.Supplier;
 
 public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, GardenMod.MODID);
@@ -36,6 +31,9 @@ public class BlockInit {
             ()-> new BlackberryBushBlock(BlockBehaviour.Properties.of()
                     .mapColor(MapColor.PLANT).randomTicks().noCollission().sound(SoundType.SWEET_BERRY_BUSH).pushReaction(PushReaction.DESTROY)));
 
+    public static final RegistryObject<IceChestBlock> ICE_CHEST_BLOCK = BLOCKS.register("ice_chest",
+            () -> new IceChestBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)
+                    .strength(5.0f, 15f)));
 
 
 }
