@@ -11,12 +11,14 @@
   "item.gardenmod.spaghetti": "Spaghetti",
   "item.gardenmod.ice_cream_maker": "Ice Cream Maker",
   "item.gardenmod.blackberry": "Blackberry",
+  "item.gardenmod.ice_chest": "Ice Chest",
 
   "block.gardenmod.blueberry_crop": "Blueberry Crop",
   "block.gardenmod.tomato_crop": "Tomato Crop",
   "block.gardenmod.cabbage_crop": "Cabbage Crop",
   "block.gardenmod.ice_cream_maker": "Ice Cream Maker",
   "block.gardenmod.blackberry_bush": "Blackberry Bush",
+  "block.gardenmod.ice_chest": "Ice Chest",
 
   "itemGroup.garden_mod_tab": "Garden Mod Tab",
   "itemGroup.ice_cream_maker": "Ice Cream Maker"
