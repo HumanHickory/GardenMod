@@ -24,7 +24,7 @@ public class IceCreamMakerContainer extends AbstractContainerMenu {
             //18 pixels apart
             addSlot(new SlotItemHandler(iceCreamMaker.getInputItems(), SLOT_INPUT, 46, 24));
             addSlot(new SlotItemHandler(iceCreamMaker.getInputItems(), SLOT_INPUT + 1, 64, 24));
-            addSlot(new SlotItemHandler(iceCreamMaker.getInputItems(), SLOT_INPUT + 2, 88, 24));
+            addSlot(new SlotItemHandler(iceCreamMaker.getOptionalInputItems(), OPTIONAL_SLOT_INPUT, 88, 24));
             addSlot(new SlotItemHandler(iceCreamMaker.getOutputItems(), SLOT_OUTPUT, 137, 24));
         }
 
@@ -70,7 +70,7 @@ public class IceCreamMakerContainer extends AbstractContainerMenu {
                     return ItemStack.EMPTY;
                 }
             }
-            if (!this.moveItemStackTo(stack, SLOT_INPUT, SLOT_INPUT + 2, false)) {
+            if (!this.moveItemStackTo(stack, SLOT_INPUT, SLOT_INPUT + 1, false)) {
                 if (index < 27 + SLOT_COUNT) {
                     if (!this.moveItemStackTo(stack, 27 + SLOT_COUNT, 36 + SLOT_COUNT, false)) {
                         return ItemStack.EMPTY;
