@@ -28,7 +28,8 @@ public class ItemInit {
     public static final RegistryObject<Item> CABBAGE = registerFoodBlockItem("cabbage", BlockInit.CABBAGE_CROP);
     public static final RegistryObject<Item> BLACKBERRY = registerFoodBlockItem("blackberry", BlockInit.BLACKBERRY_BUSH);
 
-    public static final RegistryObject<Item> ICE_CHEST = registerBlockItem("ice_chest", BlockInit.ICE_CHEST_BLOCK);
+    public static final RegistryObject<Item> ICE_CHEST =  registerBlockItem("ice_chest", BlockInit.ICE_CHEST_BLOCK);
+    public static final RegistryObject<Item> ICE_CREAM_MAKER =  registerBlockItem("ice_cream_maker", BlockInit.ICE_CREAM_MAKER);
 
     //PRIVATE METHODS
 

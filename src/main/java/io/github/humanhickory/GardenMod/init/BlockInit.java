@@ -3,6 +3,7 @@ package io.github.humanhickory.GardenMod.init;
 import io.github.humanhickory.GardenMod.GardenMod;
 import io.github.humanhickory.GardenMod.blockEntities.iceChest.IceChestBlock;
 import io.github.humanhickory.GardenMod.blockEntities.iceChest.IceChestBlockEntity;
+import io.github.humanhickory.GardenMod.blockEntities.iceCreamMaker.IceCreamMakerBlock;
 import io.github.humanhickory.GardenMod.blocks.bushes.BlackberryBushBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.BlueberryCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.CabbageCropBlock;
@@ -36,6 +37,10 @@ public class BlockInit {
 
     public static final RegistryObject<IceChestBlock> ICE_CHEST_BLOCK = BLOCKS.register("ice_chest",
             () -> new IceChestBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)
+                    .strength(5.0f, 15f)));
+
+    public static final RegistryObject<IceCreamMakerBlock> ICE_CREAM_MAKER = BLOCKS.register("ice_cream_maker",
+            () -> new IceCreamMakerBlock(BlockBehaviour.Properties.of()
                     .strength(5.0f, 15f)));
 
 
