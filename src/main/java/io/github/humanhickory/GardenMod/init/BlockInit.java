@@ -39,9 +39,8 @@ public class BlockInit {
             () -> new IceChestBlock(BlockBehaviour.Properties.copy(Blocks.BARREL)
                     .strength(5.0f, 15f)));
 
-    public static final RegistryObject<IceCreamMakerBlock> ICE_CREAM_MAKER = BLOCKS.register("ice_cream_maker",
-            () -> new IceCreamMakerBlock(BlockBehaviour.Properties.of()
-                    .strength(5.0f, 15f)));
+    public static final RegistryObject<IceCreamMakerBlock> ICE_CREAM_MAKER = BLOCKS.register("ice_cream_maker", IceCreamMakerBlock::new);
+
 
 
 
