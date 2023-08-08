@@ -20,6 +20,7 @@ public class GardenMod {
         BlockInit.BLOCKS.register(bus);
         CreativeTabInit.TABS.register(bus);
         BlockEntityInit.BLOCK_ENTITIES.register(bus);
+        MenuTypeInit.MENU_TYPES.register(bus);
 
     }
 

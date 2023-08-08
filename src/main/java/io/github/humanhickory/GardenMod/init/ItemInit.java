@@ -20,6 +20,11 @@ public class ItemInit {
     public static final RegistryObject<Item> SPAGHETTI = registerFoodItem("spaghetti", 6, .6f);
     public static final RegistryObject<Item> CHERRY_PIE = registerFoodItem("cherry_pie", 3, 0.3f);
     public static final RegistryObject<Item> BLUEBERRY_PIE = registerFoodItem("blueberry_pie", 3, 0.3f);
+    public static final RegistryObject<Item> ICE_CREAM = registerFoodItem("ice_cream", 3, 0.3f);
+    public static final RegistryObject<Item> CHOCOLATE_ICE_CREAM = registerFoodItem("chocolate_ice_cream", 3, 0.3f);
+    public static final RegistryObject<Item> BLACKBERRY_ICE_CREAM = registerFoodItem("blackberry_ice_cream", 3, 0.3f);
+    public static final RegistryObject<Item> CHERRY_ICE_CREAM = registerFoodItem("cherry_ice_cream", 3, 0.3f);
+    public static final RegistryObject<Item> BLUEBERRY_ICE_CREAM = registerFoodItem("blueberry_ice_cream", 3, 0.3f);
 
     public static final RegistryObject<Item> COPPER_POT = registerItem("copper_pot");
 

@@ -12,6 +12,11 @@
   "item.gardenmod.ice_cream_maker": "Ice Cream Maker",
   "item.gardenmod.blackberry": "Blackberry",
   "item.gardenmod.ice_chest": "Ice Chest",
+  "item.gardenmod.ice_cream": "Ice Cream",
+  "item.gardenmod.chocolate_ice_cream": "Chocolate Ice Cream",
+  "item.gardenmod.cherry_ice_cream": "Cherry Ice Cream",
+  "item.gardenmod.blackberry_ice_cream": "Blackberry Ice Cream",
+  "item.gardenmod.blueberry_ice_cream": "Blueberry Ice Cream",
 
   "block.gardenmod.blueberry_crop": "Blueberry Crop",
   "block.gardenmod.tomato_crop": "Tomato Crop",
