@@ -24,14 +24,8 @@ public class GardenMod {
 
     }
 
-    @Mod.EventBusSubscriber(modid = GardenMod.MODID, bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class ClientModEvents {
-        @SubscribeEvent
-        public static void onClientSetup(FMLClientSetupEvent event){
-            ItemBlockRenderTypes.setRenderLayer(BlockInit.BLUEBERRY_CROP.get(), RenderType.cutout());
 
-        }
-    }
+
 
 }
 
