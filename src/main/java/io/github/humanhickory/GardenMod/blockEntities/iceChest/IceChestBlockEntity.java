@@ -16,17 +16,21 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.AbstractContainerMenu;
 import net.minecraft.world.inventory.ChestMenu;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BarrelBlockEntity;
 import net.minecraft.world.level.block.entity.ContainerOpenersCounter;
 import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 
+import java.util.List;
+
 public class IceChestBlockEntity extends RandomizableContainerBlockEntity {
     private NonNullList<ItemStack> items = NonNullList.withSize(27, ItemStack.EMPTY);
 
     public IceChestBlockEntity(BlockPos pPos, BlockState pBlockState) {
         super(BlockEntityInit.ICE_CHEST_BLOCK_ENTITY.get(), pPos, pBlockState);
+
     }
 
     private final ContainerOpenersCounter openersCounter = new ContainerOpenersCounter() {
@@ -38,6 +42,19 @@ public class IceChestBlockEntity extends RandomizableContainerBlockEntity {
         protected void onClose(Level p_155072_, BlockPos p_155073_, BlockState p_155074_) {
             IceChestBlockEntity.this.playSound(p_155074_, SoundEvents.BARREL_CLOSE);
             IceChestBlockEntity.this.updateBlockState(p_155074_, false);
+
+            NonNullList<ItemStack> newItems = NonNullList.withSize(27, ItemStack.EMPTY);
+
+            for(int i=0; i < items.size() - 1; i++){
+                var item = items.get(i);
+                if(item.getItem() == Items.WATER_BUCKET){
+                    newItems.set(i, new ItemStack(Items.POWDER_SNOW_BUCKET));
+                } else if(!item.isEmpty()){
+                    newItems.set(i, item);
+                }
+            }
+
+            setItems(newItems);
         }
 
         protected void openerCountChanged(Level p_155066_, BlockPos p_155067_, BlockState p_155068_, int p_155069_, int p_155070_) {

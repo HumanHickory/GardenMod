@@ -1,5 +1,28 @@
 {
   "variants": {
-    "": {"model": "gardenmod:block/ice_cream_maker" }
+    "facing=up": {
+      "model": "gardenmod:block/ice_cream_maker",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "gardenmod:block/ice_cream_maker",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "gardenmod:block/ice_cream_maker",
+      "y": 270
+    },
+    "facing=north": {
+      "model": "gardenmod:block/ice_cream_maker",
+      "y": 0
+    },
+    "facing=south": {
+      "model": "gardenmod:block/ice_cream_maker",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "gardenmod:block/ice_cream_maker",
+      "y": 90
+    }
   }
 }

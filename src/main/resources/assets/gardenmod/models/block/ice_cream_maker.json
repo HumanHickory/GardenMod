@@ -1,6 +1,11 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "all": "gardenmod:block/ice_cream_maker"
+    "up": "gardenmod:block/ice_cream_maker_top",
+    "down": "gardenmod:block/ice_cream_maker_top",
+    "north": "gardenmod:block/ice_cream_maker_front",
+    "east": "gardenmod:block/ice_cream_maker_side",
+    "south": "gardenmod:block/ice_cream_maker_side",
+    "west": "gardenmod:block/ice_cream_maker_side"
   }
 }

@@ -1,8 +1,11 @@
 {
   "parent": "minecraft:block/cube_bottom_top",
   "textures": {
-    "bottom": "gardenmod:block/ice_chest_bottom",
-    "side": "gardenmod:block/ice_chest_side",
-    "top": "gardenmod:block/ice_chest_top"
+    "up": "gardenmod:block/ice_chest_top",
+    "down": "gardenmod:block/ice_chest_bottom",
+    "north": "gardenmod:block/ice_chest_front",
+    "east": "gardenmod:block/ice_chest_side",
+    "south": "gardenmod:block/ice_chest_back",
+    "west": "gardenmod:block/ice_chest_side"
   }
 }

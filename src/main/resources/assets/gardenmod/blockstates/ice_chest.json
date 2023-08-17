@@ -1,5 +1,13 @@
 {
   "variants": {
+    "facing=up,open=false": {
+      "model": "gardenmod:block/ice_chest",
+      "x": 270
+    },
+    "facing=up,open=true": {
+      "model": "gardenmod:block/ice_chest_open",
+      "x": 270
+    },
     "facing=down,open=false": {
       "model": "gardenmod:block/ice_chest",
       "x": 180
@@ -10,47 +18,35 @@
     },
     "facing=east,open=false": {
       "model": "gardenmod:block/ice_chest",
-      "x": 90,
-      "y": 90
+      "y": 270
     },
     "facing=east,open=true": {
       "model": "gardenmod:block/ice_chest_open",
-      "x": 90,
-      "y": 90
+      "y": 270
     },
     "facing=north,open=false": {
       "model": "gardenmod:block/ice_chest",
-      "x": 90
+      "y": 0
     },
     "facing=north,open=true": {
       "model": "gardenmod:block/ice_chest_open",
-      "x": 90
+      "y": 0
     },
     "facing=south,open=false": {
       "model": "gardenmod:block/ice_chest",
-      "x": 90,
       "y": 180
     },
     "facing=south,open=true": {
       "model": "gardenmod:block/ice_chest_open",
-      "x": 90,
       "y": 180
-    },
-    "facing=up,open=false": {
-      "model": "gardenmod:block/ice_chest"
-    },
-    "facing=up,open=true": {
-      "model": "gardenmod:block/ice_chest_open"
     },
     "facing=west,open=false": {
       "model": "gardenmod:block/ice_chest",
-      "x": 90,
-      "y": 270
+      "y": 90
     },
     "facing=west,open=true": {
       "model": "gardenmod:block/ice_chest_open",
-      "x": 90,
-      "y": 270
+      "y": 90
     }
   }
 }
