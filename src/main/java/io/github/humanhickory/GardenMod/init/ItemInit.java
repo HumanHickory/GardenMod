@@ -1,11 +1,11 @@
 package io.github.humanhickory.GardenMod.init;
 
 import io.github.humanhickory.GardenMod.GardenMod;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -15,6 +15,14 @@ public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, GardenMod.MODID);
 
     public static final RegistryObject<Item> TOMATO = registerFoodItem("tomato", 2, 0.2f);
+    public static final RegistryObject<Item> GHOST_PEPPER = CreativeTabInit.addToFoodTab(ITEMS.register("ghost_pepper",
+            () -> new Item(new Item.Properties()
+                    .food(new FoodProperties.Builder()
+                            .nutrition(2)
+                            .saturationMod(.0f)
+                            .effect(() -> new MobEffectInstance(MobEffects.GLOWING, 1000, 2), 1) //1 = happens 100% of the time
+                            .effect(() -> new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 500, 2), .75f) //.75 = happens 75% of time
+                            .build()))));
     public static final RegistryObject<Item> CHERRY = registerFoodItem("cherry", 2, 0.2f);
     public static final RegistryObject<Item> SPAGHETTI = registerFoodItem("spaghetti", 6, .6f);
     public static final RegistryObject<Item> CHERRY_PIE = registerFoodItem("cherry_pie", 3, 0.3f);
@@ -23,6 +31,7 @@ public class ItemInit {
     public static final RegistryObject<Item> COPPER_POT = registerItem("copper_pot");
 
     public static final RegistryObject<Item> TOMATO_SEEDS = registerFoodBlockItem("tomato_seeds", BlockInit.TOMATO_CROP);
+    public static final RegistryObject<Item> GHOST_PEPPER_SEEDS = registerFoodBlockItem("ghost_pepper_seeds", BlockInit.GHOST_PEPPER_CROP);
     public static final RegistryObject<Item> CABBAGE = registerFoodBlockItem("cabbage", BlockInit.CABBAGE_CROP);
     public static final RegistryObject<Item> BLACKBERRY = registerFoodBlockItem("blackberry", BlockInit.BLACKBERRY_BUSH);
     public static final RegistryObject<Item> BLUEBERRY =registerFoodBlockItem("blueberry", BlockInit.BLUEBERRY_BUSH);

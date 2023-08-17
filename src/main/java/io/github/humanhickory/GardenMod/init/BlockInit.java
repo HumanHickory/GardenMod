@@ -6,6 +6,7 @@ import io.github.humanhickory.GardenMod.blockEntities.iceCreamMaker.IceCreamMake
 import io.github.humanhickory.GardenMod.blocks.bushes.BlackberryBushBlock;
 import io.github.humanhickory.GardenMod.blocks.bushes.BlueberryBushBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.CabbageCropBlock;
+import io.github.humanhickory.GardenMod.blocks.crops.GhostPepperCropBlock;
 import io.github.humanhickory.GardenMod.blocks.crops.TomatoCropBlock;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -24,6 +25,9 @@ public class BlockInit {
 
     public static final RegistryObject<Block> CABBAGE_CROP = BLOCKS.register("cabbage_crop",
             ()-> new CabbageCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
+
+    public static final RegistryObject<Block> GHOST_PEPPER_CROP = BLOCKS.register("ghost_pepper_crop",
+            ()-> new GhostPepperCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT)));
 
     public static final RegistryObject<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush",
             ()-> new BlackberryBushBlock(BlockBehaviour.Properties.of()

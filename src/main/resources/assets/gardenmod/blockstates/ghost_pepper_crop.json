@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "gardenmod:block/ghost_pepper_stage0" },
+    "age=1": { "model": "gardenmod:block/ghost_pepper_stage1" },
+    "age=2": { "model": "gardenmod:block/ghost_pepper_stage2" },
+    "age=3": { "model": "gardenmod:block/ghost_pepper_stage3" },
+    "age=4": { "model": "gardenmod:block/ghost_pepper_stage4" },
+    "age=5": { "model": "gardenmod:block/ghost_pepper_stage5" },
+    "age=6": { "model": "gardenmod:block/ghost_pepper_stage6" },
+    "age=7": { "model": "gardenmod:block/ghost_pepper_stage7" }
+  }
+}

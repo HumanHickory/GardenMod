@@ -9,17 +9,17 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
 
-public class TomatoCropBlock extends CropBlock {
-    public static final int MaxAge = 5;
+public class GhostPepperCropBlock extends CropBlock {
+    public static final int MaxAge = 7;
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, MaxAge);
 
-    public TomatoCropBlock(Properties properties) {
+    public GhostPepperCropBlock(Properties properties) {
         super(properties);
     }
 
     @Override
     protected ItemLike getBaseSeedId(){
-        return ItemInit.TOMATO_SEEDS.get();
+        return ItemInit.GHOST_PEPPER_SEEDS.get();
     }
 
     @Override

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/tinted_cross",
+  "textures": {
+    "cross": "gardenmod:block/ghost_pepper_stage1"
+  },
+  "render_type": "cutout"
+}
